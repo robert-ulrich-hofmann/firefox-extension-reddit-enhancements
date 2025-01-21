@@ -6,14 +6,14 @@
   "description": "Gives the user options to always go to old.reddit.com/ when opening a reddit URL, always accept or decline all reddit cookies and always set the 18+ age confirmation.",
 
   "icons": {
-    "48": "icons/reddit-enhancements-48.png"
+    "48": "icons/reddit-enhancements-48.png",
     "96": "icons/reddit-enhancements-96.png"
   },
 
   "content_scripts": [
     {
       "matches": ["*://*.reddit.com/*"],
-      "js": ["src/reddit-enhancements.js"]
+      "js": ["reddit-enhancements.js"]
     }
   ]
 }
