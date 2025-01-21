@@ -1,3 +1,5 @@
+import settings from "../settings.json"
+
 // url always old. leave unchanged
 function replaceURL() {
     const originalURL = window.location.toString();
