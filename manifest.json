@@ -1,19 +1,18 @@
 {
-  "manifest_version": 2,
-  "name": "Reddit Enhancements",
-  "version": "0.1",
+    "manifest_version": 2,
+    "name": "Reddit Enhancements",
+    "version": "0.1",
 
-  "description": "Gives the user options to always go to old.reddit.com/ when opening a reddit URL, always accept or decline all reddit cookies and always set the 18+ age confirmation.",
+    "description": "Gives the user options to always go to old.reddit.com/ when opening a reddit URL, always accept or decline all reddit cookies and always set the 18+ age confirmation.",
 
-  "icons": {
-    "48": "icons/reddit-enhancements-48.png",
-    "96": "icons/reddit-enhancements-96.png"
-  },
+    "icons": {
+        "48": "icons/reddit-enhancements-48.png",
+        "96": "icons/reddit-enhancements-96.png"
+    },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.reddit.com/*"],
-      "js": ["reddit-enhancements.js"]
-    }
-  ]
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": ["webRequest", "webRequestBlocking", "*://www.reddit.com/*"]
 }
