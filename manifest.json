@@ -14,5 +14,17 @@
         "scripts": ["background.js"]
     },
 
-    "permissions": ["webRequest", "webRequestBlocking", "*://www.reddit.com/*"]
+    "content_scripts": [
+        {
+            "matches": ["*://*.reddit.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "permissions": [
+        "cookies",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.reddit.com/*"
+    ]
 }
