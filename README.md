@@ -9,3 +9,5 @@ Firefox Extension to enhance reddit browsing experience
 todo: sync manifest
 
 "Gives the user options to always go to old.reddit.com/ when opening a reddit URL, always accept or decline all reddit cookies and always set the 18+ age confirmation."
+
+todo: publish and link here and from here
